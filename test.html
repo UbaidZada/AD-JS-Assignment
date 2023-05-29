@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+</head>
+<body>
+    <script>
+
+// Question 1 
+
+let Numbers = [2,3,5,7,6,4,3,7,8,9,10,12,]
+
+
+function EvenSum (Numbers){
+
+    
+    let sum = 0;
+    
+    for (i = 0 ; i < Numbers.length ; i++ ){
+
+
+if(Numbers[i] % 2 == 0){
+
+sum = sum + Numbers[i]
+
+console.log(sum)
+
+}
+
+
+}
+
+
+}
+
+EvenSum(Numbers)
+
+
+
+// END
+
+// Question 2
+
+
+for (j = 1; j <= 100; j++){
+
+if(j % 3 == 0 && j % 5 == 0){
+
+console.log(j + " " + "FizzBuzz")
+
+
+}
+
+
+
+else if (j % 3  == 0){
+
+console.log( j + " " + "Fizz" )
+
+
+}
+
+
+else if (j %  5 == 0){
+
+console.log( j + " " + "Buzz" )
+
+
+}
+
+
+
+
+}
+
+// END
+
+// Question 3
+
+
+
+let CarDetails = {
+
+make : "Honda",
+model : "Grandi",
+year : 2023,
+
+
+};
+
+
+function CarInfo(CarDetails){
+
+for (j in CarDetails){
+
+console.log(j + " " + CarDetails[j])
+
+
+}
+
+
+
+}
+
+
+CarInfo(CarDetails)
+
+// END
+
+
+// Question 4
+
+
+let arry = ["A" ,"B" ,"C" ,"D" ,"E", "F" , "G", "H", "I" ,"J", "K" , "L" ,"M" ,"N" ,"O", "P" , "Q", "R", "S", "T" , "U", "V" , "W", "X", "Y", "Z"]
+
+console.log(arry)
+
+
+
+// question 5
+
+
+class teacher{ 
+    constructor(Name,Age,Class,Subject){
+
+this.Name = Name,
+this.Age = Age,
+this.Class = Class,
+this.Subject = Subject
+
+    }
+
+info(){
+
+console.log (this.Name + " " + this.Age + " " + this.Class + " " + this.Subject);
+
+
+}
+
+
+} 
+
+ class student extends teacher {
+
+info(){
+
+
+    super.info();
+     console.log (this.Name + " " + this.Age + " " + this.Class + " " + this.Subject);
+
+
+}
+
+
+ }
+
+let a = new teacher ("Ebad Uddin", 27 , "2210E1" , "Inheritance");
+let b = new student ("Ubaid Zada", 22 , "2210E1" , "Inheritance");
+
+
+a.info();
+ b.hide();
+
+
+
+    </script>
+</body>
+</html>
