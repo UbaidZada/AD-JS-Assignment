@@ -130,28 +130,27 @@ class teacher{
 this.Name = Name,
 this.Age = Age,
 this.Class = Class,
-this.Subject = Subject
-
+this.Subject = Subject,
+this.markattendance = [];
     }
 
-info(){
-
-console.log (this.Name + " " + this.Age + " " + this.Class + " " + this.Subject);
-
+attendance(){
+this.markattendance.push(new Date());
 
 }
+
+
 
 
 } 
 
  class student extends teacher {
 
-info(){
+constructor(Name,Age,Class,Subject){
 
 
-    super.info();
-     console.log (this.Name + " " + this.Age + " " + this.Class + " " + this.Subject);
-
+    super(Name,Age,Class,Subject);
+     
 
 }
 
@@ -161,9 +160,10 @@ info(){
 let a = new teacher ("Ebad Uddin", 27 , "2210E1" , "Inheritance");
 let b = new student ("Ubaid Zada", 22 , "2210E1" , "Inheritance");
 
-
-a.info();
- b.hide();
+a.attendance();
+b.attendance();
+console.log(a);
+console.log(b)
 
 
 
